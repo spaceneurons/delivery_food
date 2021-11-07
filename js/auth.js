@@ -38,10 +38,7 @@ buttonOut.addEventListener("click", () => {
 
 logInForm.addEventListener("submit", (event) => {
   event.preventDefault();
-//   if (inputLogin.value == "") {
-//     alert("Вы не ввели логин!");
-
-//   } 
+  
   const user = {
     login: inputLogin.value,
     password: inputPassword.value,
