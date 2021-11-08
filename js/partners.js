@@ -1,3 +1,4 @@
+const partners = () =>{
 const url = String(document.location).replace("/index.html", "");
 
 const restaurants = document.querySelector(".cards-restaurants");
@@ -39,4 +40,6 @@ function renderRestaurants(cards) {
 fetch("./db/partners.json")
   .then((response) => response.json())
   .then((data) => renderRestaurants(data))
-  .catch((error) => console.log(error));
+  .catch((error) => console.log(error));}
+
+  partners();
